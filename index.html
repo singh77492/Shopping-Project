@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Kalpvaig </title>
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Remember<span style="color:rgb(255, 102, 0)"><b>Kalpvaig </b></span></a>
+            
+            <img id="mobile-cta" class="mobile-menu" src="images/menu1.jpg" alt="Open Naviagtion" width="20" height="20">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="" alt="">
+                <ul class="primary-nav">
+                    <li class="currrent"><a href="home.html">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">It's Nitty &amp; Gitty</p>
+                <h1>A Task App That Doesn't Strink</h1>
+                <div class="hero-cta">
+                   <a href="#" class="primary-cta">Try for free</a>
+                   <a href="https://www.youtube.com/watch?v=rGBhvcB_kuk" class="watch-video-cta">
+                       <img src="images/image1.jpg" alt="watch a video" width="25" height="25"> Watch a video</a>
+                   </a>
+                </div>
+            </div>
+           </div>
+           <img src="images/illustration1.png" class="hero-img" alt="illustration">
+        </div>
+    </section>
+
+    <section class="features-section">
+    <div class="container">
+        <ul>
+            <li>Unlimited Tasks</li>
+            <li>SMS Task Reminders</li>
+            <li>Confetti Explosions upon Task Completions</li>
+            <li>Social Media Announcements</li>
+            <li>Real Time Collaboration</li>
+            <li>Other awesome features</li>
+        </ul>
+    </div>
+    <img src="images/phone1.jpeg" alt="Men Holding Phone">
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <img src="images/person3.png" alt="Person" width="100" height="100">
+                <li>
+                    <blockquote>"I’m Priya , I'm Varanasi, Since 3 years I’m working as web developer in Company name and location. have developed many website and apart from the I have been part of web design project"</blockquote>
+                    <cite>- Priya</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <img src="images/person4.png" alt="Person" width="100" height="100">
+                <li>
+                    <blockquote>"I’m Herry Singh , I'm Lucknow, Since 3 years I’m working as web developer in Company name and location. have developed many website and apart from the I have been part of web design project"</blockquote>
+                    <cite>- Herry</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <img src="images/person2.png" alt="Person" width="100" height="100">
+                <li>
+                    <blockquote>"I’m Peter Singh , I'm Delhi, Since 3 years I’m working as web developer in Company name and location. have developed many website and apart from the I have been part of web design project"</blockquote>
+                    <cite>- Peter</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="Contact-section">
+        <div class="container">
+           <div class="contact-left">
+              <h2>Contact</h2>
+              <form action="">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name">
+
+                  <label for="message">Message</label>
+                  <textarea type="message" id="message" cols="30" rows="10"name="eamil"></textarea>
+                  
+                  <input type="submit" id="send-message-cta" name="Send message">
+              </form>
+           </div>
+
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7215.369710221016!2d82.99328257242767!3d25.281184686714685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e318b731bff83%3A0xa97c2620d0075ebe!2sLanka%2C%20Varanasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1627180457331!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById("mobile-cta")
+        nav = document.querySelector('nav');
+        mobileBtnExit = document.getElementById("mobile-exit");
+
+        mobileBtn.addEventListener('Click',() => {
+          
+          nav.classList.add('menu-btu');
+
+        })
+
+        mobileBtnExit.addEventListener('Click',() => {
+          
+          nav.classList.remove('menu-btu');
+
+        })
+
+
+    </script>
+</body>
+</html>
